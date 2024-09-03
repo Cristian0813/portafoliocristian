@@ -1,36 +1,244 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+```
+Estructura Screaming Architecture
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cvactualizada/
+├── .next/
+├── node_modules/
+├── public/
+│   ├── next.svg	
+│   ├── vercel.svg
+│   └── documents/
+│       ├── cv.pdf
+│       └── portfolio.pdf
+├── src/
+│   ├── app/
+│   │   ├── contacto/
+│   │   │   └── page.tsx
+│   │   ├── proyectos.tsx
+│   │   │   └── page.tsx
+│   │   ├── sobremi.tsx
+│   │   │   └── page.tsx
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── Header/
+│   │   │   └── Header.tsx
+│   │   └── ui/
+│   │       └── ThemeSwitcher/
+│   │           ├── ThemeSwitcher.tsx
+│   │           ├── MoonIcon.tsx
+│   │           └── SunIcon.tsx
+│   ├── features/
+│   │   ├── home/
+│   │   │   └── HomePage.tsx
+│   │   ├── about/
+│   │   │   └── AboutPage.tsx
+│   │   ├── contact/
+│   │   │   └── ContactPage.tsx
+│   │   └── projects/
+│   │       └── ProjectsPage.tsx
+│   ├── styles/
+│   │   └── globals.css
+│   ├── utils/
+│   │   └── theme.ts
+│   └── assets/
+│       ├── images/
+│       │   ├── image.png
+│       │   └── image1.png
+│       └── videos/
+│           ├── video.mp4
+│           └── video1.mp4
+├── .eslintrc.json
+├── .gitignore
+├── next-env.d.ts
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.ts
+└── tsconfig.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+export default function ProjectsPage() {
+  return (
+    <section className="pt-page pt-page-4" data-id="Portafolio">
+      <div className="border-block-top-110"></div>
+      <div className="section-inner">
+        <div className="section-title-block">
+          <div className="section-title-wrapper">
+            <h2 className="section-title">Portafolio</h2>
+            <p className="section-description">Mis proyectos</p>
+          </div>
+        </div>
+        {/*  <!-- Portafolio Content --> */}
+        <div className="portfolio-content">
+          {/* <!-- Portafolio Grid --> */}
+          <div
+            id="portfolio_grid"
+            className="portfolio-grid portfolio-masonry masonry-grid-3"
+          >
+            {/* <!-- Portafolio Item 7 --> */}
+            <figure className="item" data-groups='["all", "media"]'>
+              <a
+                className="ajax-page-load"
+                href="assets/portafolio/juegoquiz.html"
+                title="Juego Quiz"
+              >
+                {/* <img src="assets/images/portfolio/juegoquiz/quiz_1.webp"
+                        srcset="assets/images/portfolio/juegoquiz/quiz_1.png" 
+                        style="
+                            height: 100%;
+                            width: 100%;
+                            image-rendering: auto;
+                          " alt="Juego Quiz" title="Juego Quiz" /> */}
+                <div>
+                  <h5 className="name">Juego de Quiz</h5>
+                  <small className="fs-6 fst-italic">Febrero-2024</small>
+                  <i className="get-font-icon bi bi-display"></i>
+                </div>
+              </a>
+            </figure>
+            {/* <!-- /Portafolio Item 7 --> */}
+            {/* <!-- Portafolio Item 6 --> */}
+            <figure className="item" data-groups='["all", "media"]'>
+              <a
+                className="ajax-page-load"
+                href="assets/portafolio/juegomemoria.html"
+                title="Juego de Memoria"
+              >
+                {/* <img src="assets/images/portfolio/juegomemoria/memoria_1.png" srcset="
+                            assets/images/portfolio/juegomemoria/memoria_1.png
+                          " style="
+                            height: 100%;
+                            width: 100%;
+                            image-rendering: auto;
+                          " alt="Juego de Memoria" title="Juego de Memoria" /> */}
+                <div>
+                  <h5 className="name">Juego de Memoria</h5>
+                  <small className="fs-6 fst-italic">Enero-2024</small>
+                  <i className="get-font-icon bi bi-display"></i>
+                </div>
+              </a>
+            </figure>
+            {/* <!-- /Portafolio Item 6 --> */}
+            {/* <!-- Portafolio Item 5 --> */}
+            <figure className="item" data-groups='["all", "media"]'>
+              <a
+                className="ajax-page-load"
+                href="assets/portafolio/newshomepage.html"
+                title="News homepage"
+              >
+                {/*  <img src="assets/images/portfolio/news_homepage/news_homepage-1.webp" srcset="
+                            assets/images/portfolio/news_homepage/news_homepage-1.png
+                          " style="
+                            height: 100%;
+                            width: 100%;
+                            image-rendering: auto;
+                          " alt="News homepage" title="News homepage" /> */}
+                <div>
+                  <h5 className="name">News homepage</h5>
+                  <small className="fs-6 fst-italic">Octubre-2023</small>
+                  <i className="get-font-icon bi bi-display"></i>
+                </div>
+              </a>
+            </figure>
+            {/* <!-- /Portafolio Item 5 --> */}
+            {/* <!-- Portafolio Item 4 --> */}
+            <figure className="item" data-groups='["all", "media"]'>
+              <a
+                className="ajax-page-load"
+                href="assets/portafolio/e-commerce.html"
+                title="E-commerce"
+              >
+                {/* <img src="assets/images/portfolio/e-commerce/e-commerce_1.webp" srcset="
+                            assets/images/portfolio/e-commerce/e-commerce_1.png
+                          " style="
+                            height: 100%;
+                            width: 100%;
+                            image-rendering: auto;
+                          " alt="E-commerce" title="E-commerce" /> */}
+                <div>
+                  <h5 className="name">E-commerce</h5>
+                  <small className="fs-6 fst-italic">Septiembre-2023</small>
+                  <i className="get-font-icon bi bi-display"></i>
+                </div>
+              </a>
+            </figure>
+            {/* <!-- /Portafolio Item 4 --> */}
+            {/* <!-- Portafolio Item 3 --> */}
+            <figure className="item" data-groups='["all", "media"]'>
+              <a
+                className="ajax-page-load"
+                href="assets/portafolio/mallasjf.html"
+                title="Proyecto final Mallas Jf"
+              >
+                {/* <img src="assets/images/portfolio/mallasjf/mallasjf-1.webp" srcset="
+                            assets/images/portfolio/mallasjf/mallasjf-1.png
+                          " style="
+                            height: 100%;
+                            width: 100%;
+                            image-rendering: auto;
+                          " alt="Mallasjf-1" title="Mallasjf-1" /> */}
+                <div>
+                  <h5 className="name">Proyecto final Mallas Jf</h5>
+                  <small className="fs-6 fst-italic">Julio-2023</small>
+                  <i className="get-font-icon bi bi-display"></i>
+                </div>
+              </a>
+            </figure>
+            {/* <!-- /Portafolio Item 3 --> */}
+            {/* <!-- Portafolio Item 2 --> */}
+            <figure className="item" data-groups='["all", "media"]'>
+              <a
+                className="ajax-page-load"
+                href="assets/portafolio/pokedex.html"
+                title="Pokédex"
+              >
+                {/* <img src="assets/images/portfolio/pokedex/pokedex-2.webp"
+                        srcset="assets/images/portfolio/pokedex/pokedex-2.png" style="
+                            height: 100%;
+                            width: 100%;
+                            image-rendering: auto;
+                          " alt="Pokédex-2" title="Pokédex-2" /> */}
+                <div>
+                  <h5 className="name">Pokédex</h5>
+                  <small className="fs-6 fst-italic">Enero-2023</small>
+                  <i className="get-font-icon bi bi-display"></i>
+                </div>
+              </a>
+            </figure>
+            {/* <!-- /Portafolio Item 2 --> */}
+            {/* <!-- Portafolio Item 1 --> */}
+            <figure className="item" data-groups='["all", "media"]'>
+              <a
+                className="ajax-page-load"
+                href="assets/portafolio/atm.html"
+                title="Atm"
+              >
+                {/* <img src="assets/images/portfolio/atm/atm_1.webp" srcset="assets/images/portfolio/atm/atm_1.png"
+                        style="
+                            height: 100%;
+                            width: 100%;
+                            image-rendering: auto;
+                          " alt="Atm_1" title="Atm_1" /> */}
+                <div>
+                  <h5 className="name">Cajero Automático</h5>
+                  <small className="fs-6 fst-italic">Enero-2023</small>
+                  <i className="get-font-icon bi bi-display"></i>
+                </div>
+              </a>
+            </figure>
+            {/*  <!-- /Portafolio Item 1 --> */}
+          </div>
+          {/* <!-- /Portfolio Grid --> */}
+        </div>
+        {/* <!-- /Portfolio Content --> */}
+      </div>
+    </section>
+  );
+}

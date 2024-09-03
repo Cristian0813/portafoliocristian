@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos base para el scrollbar */
+body {
+    --sb-track-color: #dddce0;
+    --sb-thumb-color: #7a11b2;
+    --sb-size: 6px;
+}
+
+/* Media query para aplicar estilos solo en pantallas grandes */
+@media screen and (min-width: 1024px) {
+    body::-webkit-scrollbar {
+        width: var(--sb-size)
+    }
+
+    body::-webkit-scrollbar-track {
+        background: var(--sb-track-color);
+        border-radius: 25px;
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background: var(--sb-thumb-color);
+        border-radius: 25px;
+    }
+
+    @supports not selector(::-webkit-scrollbar) {
+        body {
+            scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+        }
+    }
+}
