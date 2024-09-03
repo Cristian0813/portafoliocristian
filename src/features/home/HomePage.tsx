@@ -6,8 +6,8 @@ import FlipCard from '@/components/flippedcard/FlipCard';
 
 export default function HomePage() {
   return (
-    <section className="bg-green-500 flex items-center justify-center phone:pt-96 tablet:pt-12 pb-20 sm:p-96 sm:bg-red-500 md:p-96 md:bg-purple-500 lg:p-96 lg:bg-orange-500 xl:p-96 xl:bg-cyan-400 2xl:p-96 2xl:bg-indigo-500">
-      <div className="container mx-auto max-w-6xl ">
+    <section className="flex items-center justify-center pt-20 pb-20 sm:pt-24 sm:pb-8 md:pt-22 md:pb-18 lg:pt-24 lg:pb-12 xl:pt-24 xl:pb-12 2xl:pt-24 2xl:pb-12">
+      <div className="bg-lime-500 sm:bg-red-500 md:bg-purple-500 lg:bg-orange-500 xl:bg-cyan-400 2xl:bg-indigo-500 container mx-auto max-w-6xl ">
         <div className="flex flex-col md:flex-row p-1">
           <motion.div
             transition={{
@@ -20,7 +20,9 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="w-full md:w-2/3 p-4 bg-blue-500"
           >
-            <p className="text-2xl mb-2">Hola, mi nombre es</p>
+            <p className="text-xl sm:text-2xl md:text-4xl lg:text-6xl xl:text-4xl 2xl:text-8xl mb-2">
+              Hola, mi nombre es
+            </p>
             <h1 className="text-5xl font-bold mb-2 text-DarkPurpleColor dark:text-slate-300">
               Cristian Arias
             </h1>
@@ -28,12 +30,13 @@ export default function HomePage() {
             <hr className="mb-4" />
             <div className="space-y-4 text-xl">
               <p>
-                Mi amor por la tecnología me llevó al mundo del desarrollo web,
-                donde aprendí habilidades técnicas. He aprendido a usar
-                lenguajes y frameworks como HTML, CSS, JavaScript, TypeScript,
-                React, Bootstrap y Tailwind para asegurarme de que los diseños
-                sean adaptables y funcionan bien en cualquier dispositivo.
-                Además, tengo experiencia en el desarrollo de Back end.
+                Mi pasión por la tecnología me llevó al mundo del desarrollo
+                web, donde he estado aprendiendo y perfeccionando habilidades
+                técnicas. Utilizo lenguajes y frameworks como HTML, CSS,
+                JavaScript, TypeScript, React, Bootstrap y Tailwind para
+                asegurarme de que los diseños sean adaptables y funcionen
+                perfectamente en cualquier dispositivo. Además, tengo
+                experiencia en desarrollo de backend.
               </p>
             </div>
           </motion.div>

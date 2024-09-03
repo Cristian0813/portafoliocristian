@@ -17,7 +17,6 @@ const config: Config = {
       },
 
       screens: {
-        phone: '320px',
         tablet: '420px',
       },
       fontSize: {
