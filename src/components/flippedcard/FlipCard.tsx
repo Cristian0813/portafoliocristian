@@ -12,7 +12,7 @@ const FlipCard: React.FC = () => {
   const { isFlipped, flip } = useFlipHook();
   return (
     <motion.div
-      className="bg-orange-500 md:w-1/3 flex items-center justify-center p-8 [perspective:1000px] cursor-pointer"
+      className="md:w-1/3 flex items-center justify-center p-8 [perspective:1000px] cursor-pointer"
       onClick={flip}
       transition={{
         duration: 0.5,

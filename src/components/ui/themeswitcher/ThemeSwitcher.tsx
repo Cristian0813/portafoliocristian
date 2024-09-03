@@ -44,7 +44,7 @@ const ThemeSwitcher = (props: SwitchProps) => {
           className={slots.wrapper({
             class: [
               'w-7 h-7',
-              'flex items-center justify-center',
+              'flex items-center justify-center bg-zinc-100',
               'rounded-lg',
               'cursor-pointer',
               theme === 'dark',

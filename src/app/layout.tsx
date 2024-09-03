@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'Desarrollador web full-stack con experiencia en JavaScript, HTML, CSS, React, Node.js y Frameworks. Conoce mis proyectos y habilidades.',
   keywords:
     'Desarrollador web, JavaScript, React, Node.js, HTML, CSS, Soporte técnico, Mesa de ayuda, Cristian Javier Arias Ordoñez, Cristian J Arias O, Cristian Arias, Cristian Ordoñez, Javier Arias Ordoñez, Javier Arias, Javier Ordoñez',
-  viewport: 'width=device-width, initial-scale=1.0',
+
 };
 
 export default function RootLayout({

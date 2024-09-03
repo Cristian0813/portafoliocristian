@@ -1,4 +1,3 @@
-
 import SideMenu from '@/components/sidemenu/SideMenu';
 import HomePage from '@/features/home/HomePage';
 import ExperiencePage from '@/features/experience/ExperiencePage';
@@ -10,7 +9,7 @@ export default function App() {
     <main className="pt-4">
       <SideMenu />
       <HomePage />
-{/*       <SkillsPage />
+      {/*<SkillsPage />
       <ExperiencePage />
       <ProjectsPage /> */}
     </main>
