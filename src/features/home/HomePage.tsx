@@ -7,8 +7,8 @@ import { Divider } from '@nextui-org/react';
 
 export default function HomePage() {
   return (
-    /*     bg-lime-500 sm:bg-red-500 md:bg-purple-500 lg:bg-orange-500 xl:bg-cyan-400 2xl:bg-indigo-500 */
-    <section className="flex items-center justify-center pt-20 pb-20 sm:pt-24 sm:pb-8 md:pt-22 md:pb-18 lg:pt-24 lg:pb-12 xl:pt-24 xl:pb-12 2xl:pt-24 2xl:pb-12">
+    /* bg-lime-500 sm:bg-red-500 md:bg-purple-500 lg:bg-orange-500 xl:bg-cyan-400 2xl:bg-indigo-500 */
+    <section className="bg-lime-500 sm:bg-red-500 md:bg-purple-500 lg:bg-orange-500 xl:bg-cyan-400 2xl:bg-indigo-500 flex items-center justify-center pt-20 pb-20 sm:pt-24 sm:pb-8 md:pt-22 md:pb-18 lg:pt-24 lg:pb-12 xl:pt-24 xl:pb-12 2xl:pt-24 2xl:pb-12">
       <div className="container mx-auto max-w-6xl ">
         <div className="flex flex-col md:flex-row p-1">
           <motion.div
@@ -22,7 +22,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="w-full md:w-2/3 p-4"
           >
-            <div className='text-center md:text-left'>
+            <div className="text-center md:text-left">
               <p className="text-xl sm:text-2xl md:text-2xl lg:text-2xl xl:text-3xl 2xl:text-4xl mb-2">
                 Hola, mi nombre es
               </p>
@@ -39,14 +39,31 @@ export default function HomePage() {
                 Mi pasión por la tecnología me llevó al mundo del desarrollo
                 web, donde he estado aprendiendo y perfeccionando habilidades
                 técnicas. Utilizo lenguajes y frameworks como
-                <span className="text-orange-800"> HTML</span>,
-                <span className="text-blue-800"> CSS</span>,
-                <span className="text-amber-800"> JavaScript</span>,
-                <span className="text-cyan-800"> TypeScript</span>,
-                <span className="text-sky-800"> React</span>,
-                <span className="text-purple-800"> Bootstrap</span> y
-                <span className="text-indigo-800"> Tailwind</span> para
-                asegurarme de que los diseños sean adaptables y funcionen
+                <span className="text-orange-800 dark:text-orange-400">
+                  {' '}
+                  HTML
+                </span>
+                ,<span className="text-blue-800 dark:text-blue-400"> CSS</span>,
+                <span className="text-amber-800 dark:text-amber-400">
+                  {' '}
+                  JavaScript
+                </span>
+                ,
+                <span className="text-cyan-800 dark:text-cyan-400">
+                  {' '}
+                  TypeScript
+                </span>
+                ,<span className="text-sky-800 dark:text-sky-400"> React</span>,
+                <span className="text-purple-800 dark:text-purple-400">
+                  {' '}
+                  Bootstrap
+                </span>{' '}
+                y
+                <span className="text-indigo-800 dark:text-indigo-400">
+                  {' '}
+                  Tailwind
+                </span>{' '}
+                para asegurarme de que los diseños sean adaptables y funcionen
                 perfectamente en cualquier dispositivo. Además, tengo
                 experiencia en desarrollo de backend.
               </p>
