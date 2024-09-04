@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md dark:bg-slate-950/75">
-      <nav className="mx-auto flex max-w-full items-center justify-between p-6 lg:px-8">
+      <nav className="mx-auto flex max-w-full items-center justify-between p-2 lg:px-8">
         <div className="flex lg:flex-1">
           <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Cristian Arias</span>
@@ -70,7 +70,7 @@ export default function Header() {
         onClose={setMobileMenuOpen}
       >
         <div className="fixed inset-0 z-50 bg-black/30 backdrop-blur-sm" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white/50 dark:bg-slate-950/50 backdrop-blur-md px-6 py-6 sm:max-w-sm sm:ring-1">
+        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-52 h-72 rounded-l-xl overflow-y-auto bg-white/50 dark:bg-slate-950/50 backdrop-blur-md px-6 py-6 sm:max-w-sm sm:ring-1">
           <div className="flex items-center justify-between">
             <ThemeSwitcher />
             <button

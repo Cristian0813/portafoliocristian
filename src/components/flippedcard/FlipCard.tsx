@@ -6,13 +6,13 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
-import { Headset, Code, Braces, ComputerIcon } from 'lucide-react';
+import { Headset, Code, Braces} from 'lucide-react';
 
 const FlipCard: React.FC = () => {
   const { isFlipped, flip } = useFlipHook();
   return (
     <motion.div
-      className="bg-slate-400 md:w-2/4 lg:w-1/3 flex items-center justify-center p-8 [perspective:1000px] cursor-pointer"
+      className="md:w-2/4 lg:w-1/3 flex items-center justify-center p-4 [perspective:1000px] cursor-pointer"
       onClick={flip}
       transition={{
         duration: 0.5,
@@ -28,7 +28,6 @@ const FlipCard: React.FC = () => {
           isFlipped ? '[transform:rotateY(180deg)]' : ''
         }`}
       >
-        {/* Frente de la tarjeta */}
         <div className="absolute inset-0 [backface-visibility:hidden]">
           <Image
             alt="Cristian Arias"
@@ -38,10 +37,7 @@ const FlipCard: React.FC = () => {
             className="rounded-3xl dark:opacity-75"
           />
         </div>
-
-        {/* Reverso de la tarjeta */}
         <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] overflow-hidden rounded-3xl">
-          {/* Fondo con blur */}
           <div className="absolute inset-0 z-0">
             <Image
               alt="Cristian Arias"
@@ -51,9 +47,8 @@ const FlipCard: React.FC = () => {
               className="filter blur-md scale-110"
             />
           </div>
-          {/* Contenido */}
-          <div className="relative z-10 flex flex-col justify-center items-start h-full text-white bg-black bg-opacity-50 p-12">
-            <ul className="space-y-4 text-2xl bg-blue-600">
+          <div className="relative z-10 flex flex-col justify-center items-start h-full text-white bg-black bg-opacity-50 p-7 tablet:p-12 sm:p-10 md:p-2 lg:p-4 xl:p-8">
+            <ul className="space-y-4 text-xl tablet:space-y-6 sm:space-y-16 sm:text-2xl md:space-y-3 md:text-sm lg:space-y-6 lg:text-lg xl:space-y-8 xl:text-xl 2xl:text-2xl">
               <li className="flex items-center">
                 <Code className="h-6 w-6 mr-2 text-blue-500" />
                 <span>Desarrollador Front-end</span>

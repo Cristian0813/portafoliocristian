@@ -3,6 +3,18 @@ import React from 'react'
 export default function ExperiencePage() {
   return (
     <section className="pt-page pt-page-3" data-id="Resumen">
+      <h1>SOBRE MÍ</h1>
+      <p>
+        Tecnólogo en Análisis y Desarrollo de Sistemas de Información con sólida
+        experiencia en Soporte Técnico TI y Desarrollo Web Full Stack. Experto
+        en asistencia técnica tanto en sitio como remota, mantenimiento
+        preventivo y correctivo de equipos de cómputo, instalación y
+        actualización de software, y gestión de backups y antivirus. Competente
+        en la instalación, configuración y actualización de sistemas operativos
+        Windows. Poseo fundamentos sólidos en programación web utilizando
+        diversos lenguajes, frameworks y herramientas.
+      </p>
+      <h2>ESTUDIOS</h2>
       <div className="border-block-top-110"></div>
       <div className="section-inner">
         <div className="section-title-block">
@@ -77,7 +89,7 @@ export default function ExperiencePage() {
           </div>
           <div className="col-sm-8 col-md-6 subpage-block">
             <div className="block-title">
-              <h3>Experiencia</h3>
+              <h3>EXPERIENCIA</h3>
             </div>
             <div className="timeline">
               <div className="timeline-event te-primary">

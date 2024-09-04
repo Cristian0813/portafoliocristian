@@ -29,6 +29,7 @@ export default function ProjectsPage() {
 
   return (
     <Card className="max-w-[400px]">
+      <h1>AQUI ESTA LOS PROYECTOS</h1>
       <CardHeader className="flex gap-3">
         <Image
           alt="nextui logo"

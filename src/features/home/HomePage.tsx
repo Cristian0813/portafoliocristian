@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -35,36 +35,19 @@ export default function HomePage() {
             <Divider className="my-4" />
             <div className="space-y-4 text-md 2xl:text-xl">
               <p>
-                Mi pasión por la tecnología me llevó al mundo del desarrollo
-                web, donde he estado aprendiendo y perfeccionando habilidades
-                técnicas. Utilizo lenguajes y frameworks como
-                <span className="text-orange-800 dark:text-orange-400">
-                  {' '}
-                  HTML
-                </span>
-                ,<span className="text-blue-800 dark:text-blue-400"> CSS</span>,
-                <span className="text-amber-800 dark:text-amber-400">
-                  {' '}
-                  JavaScript
-                </span>
-                ,
-                <span className="text-cyan-800 dark:text-cyan-400">
-                  {' '}
-                  TypeScript
-                </span>
-                ,<span className="text-sky-800 dark:text-sky-400"> React</span>,
-                <span className="text-purple-800 dark:text-purple-400">
-                  {' '}
-                  Bootstrap
-                </span>{' '}
-                y
-                <span className="text-indigo-800 dark:text-indigo-400">
-                  {' '}
-                  Tailwind
-                </span>{' '}
-                para asegurarme de que los diseños sean adaptables y funcionen
-                perfectamente en cualquier dispositivo. Además, tengo
-                experiencia en desarrollo de backend.
+                Soy un apasionado por la tecnología y el desarrollo web. Mi
+                experiencia abarca tanto el frontend como el backend, asegurando
+                que los diseños no solo sean visualmente atractivos, sino
+                también funcionales en cualquier dispositivo. Utilizo
+                tecnologías como
+                <span className="text-orange-800 dark:text-orange-400"> HTML,</span>
+                <span className="text-blue-800 dark:text-blue-400"> CSS,</span>
+                <span className="text-amber-800 dark:text-amber-400"> JavaScript,</span>
+                <span className="text-cyan-800 dark:text-cyan-400"> TypeScript,</span>
+                <span className="text-sky-800 dark:text-sky-400"> React,</span>
+                <span className="text-purple-800 dark:text-purple-400"> Node.js,</span>
+                <span className="text-indigo-800 dark:text-indigo-400"> APIs</span>
+                y más para crear soluciones robustas y escalables.
               </p>
             </div>
           </motion.div>

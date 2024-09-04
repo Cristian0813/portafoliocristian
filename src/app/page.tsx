@@ -9,8 +9,8 @@ export default function App() {
     <main className="pt-4">
       <SideMenu />
       <HomePage />
-      {/*<SkillsPage />
-      <ExperiencePage />
+      <SkillsPage />
+      {/* <ExperiencePage />
       <ProjectsPage /> */}
     </main>
   );
