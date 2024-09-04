@@ -12,7 +12,7 @@ const FlipCard: React.FC = () => {
   const { isFlipped, flip } = useFlipHook();
   return (
     <motion.div
-      className="md:w-1/3 flex items-center justify-center p-8 [perspective:1000px] cursor-pointer"
+      className="bg-slate-400 md:w-2/4 lg:w-1/3 flex items-center justify-center p-8 [perspective:1000px] cursor-pointer"
       onClick={flip}
       transition={{
         duration: 0.5,
@@ -44,7 +44,7 @@ const FlipCard: React.FC = () => {
           {/* Fondo con blur */}
           <div className="absolute inset-0 z-0">
             <Image
-              alt="Background"
+              alt="Cristian Arias"
               src="/images/Cristian_A.webp"
               style={{ objectFit: 'cover' }}
               fill
@@ -53,7 +53,7 @@ const FlipCard: React.FC = () => {
           </div>
           {/* Contenido */}
           <div className="relative z-10 flex flex-col justify-center items-start h-full text-white bg-black bg-opacity-50 p-12">
-            <ul className="space-y-4">
+            <ul className="space-y-4 text-2xl bg-blue-600">
               <li className="flex items-center">
                 <Code className="h-6 w-6 mr-2 text-blue-500" />
                 <span>Desarrollador Front-end</span>
