@@ -66,31 +66,22 @@ const posts = [
 ];
 
 export default function SkillsPage() {
-  // Define an array of background colors
-  const bgColors = [
-    'bg-red-200',
-    'bg-green-200',
-    'bg-blue-200',
-    'bg-yellow-200',
-  ];
 
   return (
-    <section className="flex items-center justify-center">
+    <section className="flex items-center justify-center p-2">
       <div className="container mx-auto max-w-7xl">
         <div className="p-2">
           <div className="mx-auto p-6">
             <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-6xl font-bold tracking-tight">
-                Habilidades.
+              <h2 className="text-4xl font-bold tracking-tight">
+                Habilidades
               </h2>
             </div>
-            <div className="mx-auto mt-6 max-w-6xl grid grid-cols-4 gap-x-4 gap-y-16p-2">
-              {posts.map((post, index) => (
+            <div className="mx-auto mt-6 max-w-6xl grid grid-cols-4 gap-x-8 gap-y-16 pl-8">
+              {posts.map((post) => (
                 <article
                   key={post.id}
-                  className={`flex max-w-xl flex-col items-start justify-between p-4 rounded-lg ${
-                    bgColors[index % bgColors.length]
-                  }`}
+                  className="flex max-w-xl flex-col items-start justify-between p-4 rounded-lg dark:shadow-inner dark:shadow-gray-600"
                 >
                   <div className="group relative">
                     <h3 className="mt-3 text-xl font-semibold leading-6">
@@ -109,6 +100,7 @@ export default function SkillsPage() {
           </div>
         </div>
       </div>
+      
     </section>
   );
 }

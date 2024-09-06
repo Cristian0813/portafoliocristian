@@ -2,13 +2,13 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import FlipCard from '@/components/flippedcard/FlipCard';
+import FlipCard from '@/components/flipcard/FlipCard';
 import { Divider } from '@nextui-org/react';
 
 export default function HomePage() {
   return (
     <section className="flex items-center justify-center pt-20 pb-20 sm:pt-24 sm:pb-8 md:pt-22 md:pb-18 lg:pt-24 lg:pb-12 xl:pt-24 xl:pb-12 2xl:pt-24 2xl:pb-12">
-      <div className="container mx-auto max-w-6xl xl:ml-24 xl:mr-6 xl:max-w-7xl 2xl:ml-16 2xl:mr-4 2xl:max-w-full">
+      <div className="container mx-auto max-w-7xl xl:mx-auto xl:max-w-7xl 2xl:mx-16 2xl:max-w-full">
         <div className="flex flex-col md:flex-row p-1">
           <motion.div
             transition={{
@@ -21,7 +21,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="w-full lg:w-2/3 p-4"
           >
-            <div className="text-center md:text-left">
+            <div className="text-center md:text-left ">
               <p className="text-xl sm:text-2xl 2xl:text-4xl mb-2">
                 Hola, mi nombre es
               </p>
@@ -40,13 +40,28 @@ export default function HomePage() {
                 que los diseños no solo sean visualmente atractivos, sino
                 también funcionales en cualquier dispositivo. Utilizo
                 tecnologías como
-                <span className="text-orange-800 dark:text-orange-400"> HTML,</span>
+                <span className="text-orange-800 dark:text-orange-400">
+                  {' '}
+                  HTML,
+                </span>
                 <span className="text-blue-800 dark:text-blue-400"> CSS,</span>
-                <span className="text-amber-800 dark:text-amber-400"> JavaScript,</span>
-                <span className="text-cyan-800 dark:text-cyan-400"> TypeScript,</span>
+                <span className="text-amber-800 dark:text-amber-400">
+                  {' '}
+                  JavaScript,
+                </span>
+                <span className="text-cyan-800 dark:text-cyan-400">
+                  {' '}
+                  TypeScript,
+                </span>
                 <span className="text-sky-800 dark:text-sky-400"> React,</span>
-                <span className="text-purple-800 dark:text-purple-400"> Node.js,</span>
-                <span className="text-indigo-800 dark:text-indigo-400"> APIs</span>
+                <span className="text-purple-800 dark:text-purple-400">
+                  {' '}
+                  Node.js,
+                </span>
+                <span className="text-indigo-800 dark:text-indigo-400">
+                  {' '}
+                  APIs{' '}
+                </span>
                 y más para crear soluciones robustas y escalables.
               </p>
             </div>

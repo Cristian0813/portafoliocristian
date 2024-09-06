@@ -5,8 +5,8 @@ cvactualizada/
 ├── .next/
 ├── node_modules/
 ├── public/
-│   ├── next.svg	
-│   ├── vercel.svg
+│   ├── isoTipoCA.svg	
+│   ├── LogoCA.svg
 │   └── documents/
 │       ├── cv.pdf
 │       └── portfolio.pdf
@@ -18,36 +18,43 @@ cvactualizada/
 │   │   │   └── page.tsx
 │   │   ├── sobremi.tsx
 │   │   │   └── page.tsx
+│   │   ├── favicon.ico
+│   │   ├── not-found.tsx
 │   │   ├── layout.tsx
 │   │   └── page.tsx
 │   ├── components/
+│   │   ├── flippedcard/
+│   │   │   └── FlipCard.tsx
+│   │   ├── footer/
+│   │   │   └── Footer.tsx
 │   │   ├── Header/
 │   │   │   └── Header.tsx
+│   │   ├── sidebar/
+│   │   │   └── SideBar.tsx
 │   │   └── ui/
-│   │       └── ThemeSwitcher/
+│   │       └── themeswitcher/
 │   │           ├── ThemeSwitcher.tsx
 │   │           ├── MoonIcon.tsx
 │   │           └── SunIcon.tsx
 │   ├── features/
-│   │   ├── home/
-│   │   │   └── HomePage.tsx
 │   │   ├── about/
 │   │   │   └── AboutPage.tsx
 │   │   ├── contact/
 │   │   │   └── ContactPage.tsx
-│   │   └── projects/
-│   │       └── ProjectsPage.tsx
+│   │   ├── experience/
+│   │   │   └── ExperiencePage.tsx
+│   │   ├── home/
+│   │   │   └── HomePage.tsx
+│   │   ├── projects/
+│   │   │   └── ProjectsPage.tsx
+│   │   └── skill/
+│   │       └── SkillPage.tsx
+│   ├── hook/
+│   │   └── useFlipHook.tsx
 │   ├── styles/
 │   │   └── globals.css
 │   ├── utils/
-│   │   └── theme.ts
-│   └── assets/
-│       ├── images/
-│       │   ├── image.png
-│       │   └── image1.png
-│       └── videos/
-│           ├── video.mp4
-│           └── video1.mp4
+│       └── providers.tsx
 ├── .eslintrc.json
 ├── .gitignore
 ├── next-env.d.ts

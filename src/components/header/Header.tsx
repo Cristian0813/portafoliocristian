@@ -88,21 +88,21 @@ export default function Header() {
                 <Link
                   href="/"
                   onClick={closeMenu}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-PurpleColor hover:dark:text-DarkPurpleColor "
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 active:text-PurpleColor active:dark:text-DarkPurpleColor "
                 >
                   Inicio
                 </Link>
                 <Link
                   href="/sobremi"
                   onClick={closeMenu}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-PurpleColor hover:dark:text-DarkPurpleColor "
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 active:text-PurpleColor active:dark:text-DarkPurpleColor "
                 >
                   Sobre mí
                 </Link>
                 <Link
                   href="/contacto"
                   onClick={closeMenu}
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 hover:text-PurpleColor hover:dark:text-DarkPurpleColor "
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 active:text-PurpleColor active:dark:text-DarkPurpleColor "
                 >
                   Contacto
                 </Link>
