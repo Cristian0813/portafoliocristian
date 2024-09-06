@@ -12,7 +12,7 @@ const FlipCard: React.FC = () => {
   const { isFlipped, flip } = useFlipHook();
   return (
     <motion.div
-      className="md:w-2/4 lg:w-1/3 flex items-center justify-center p-4 [perspective:1000px] cursor-pointer"
+      className="w-full bg-blue-600  flex items-center justify-center p-4 [perspective:1000px] cursor-pointer"
       onClick={flip}
       transition={{
         duration: 0.5,
@@ -24,7 +24,7 @@ const FlipCard: React.FC = () => {
       viewport={{ once: true }}
     >
       <div
-        className={`relative w-1/3 md:w-5/6 lg:w-5/6 aspect-square transition-transform duration-500 [transform-style:preserve-3d] ${
+        className={`relative w-3/4 aspect-square transition-transform duration-500 [transform-style:preserve-3d] ${
           isFlipped ? '[transform:rotateY(180deg)]' : ''
         }`}
       >
@@ -47,7 +47,7 @@ const FlipCard: React.FC = () => {
               className="filter blur-md scale-110"
             />
           </div>
-          <div className="relative z-10 flex flex-col justify-center items-start h-full text-white bg-black bg-opacity-50 p-4 tablet:p-4 sm:p-4 md:p-2 lg:p-4 xl:p-8">
+          <div className="relative z-10 flex flex-col justify-center items-start w-full h-full text-white bg-black bg-opacity-50 p-4 tablet:p-4 sm:p-4 md:p-2 lg:p-4 xl:p-8">
             <ul className=" space-x-2 text-xs sm:text-sm md:text-sm lg:text-lg xl:text-xl xl:space-y-7 2xl:text-2xl 2xl:space-y-8">
               <li className="flex items-center">
                 <Code className="h-6 w-6 mr-2 text-blue-500" />

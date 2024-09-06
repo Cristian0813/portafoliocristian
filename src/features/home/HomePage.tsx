@@ -7,7 +7,7 @@ import { Divider } from '@nextui-org/react';
 
 export default function HomePage() {
   return (
-    <section className="flex items-center justify-center pt-20 pb-20 sm:pt-24 sm:pb-8 md:pt-22 md:pb-18 lg:pt-24 lg:pb-12 xl:pt-24 xl:pb-12 2xl:pt-24 2xl:pb-12">
+    <section className="bg-green-400 flex items-center justify-center pt-8 px-2 sm:pt-24 sm:pb-8 md:pt-22 md:pb-18 lg:pt-24 lg:pb-12 xl:pt-24 xl:pb-12 2xl:pt-24 2xl:pb-12">
       <div className="container mx-auto max-w-7xl xl:mx-auto xl:max-w-7xl 2xl:mx-16 2xl:max-w-full">
         <div className="flex flex-col md:flex-row p-1">
           <motion.div
