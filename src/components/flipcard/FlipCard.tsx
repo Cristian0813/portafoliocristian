@@ -12,7 +12,7 @@ const FlipCard: React.FC = () => {
   const { isFlipped, flip } = useFlipHook();
   return (
     <motion.div
-      className="w-full bg-blue-600  flex items-center justify-center p-4 [perspective:1000px] cursor-pointer"
+      className="w-2/4 sm:w-1/3 lg:w-1/4 flex items-center justify-center p-2 [perspective:1000px] cursor-pointer"
       onClick={flip}
       transition={{
         duration: 0.5,
@@ -24,12 +24,12 @@ const FlipCard: React.FC = () => {
       viewport={{ once: true }}
     >
       <div
-        className={`relative w-3/4 aspect-square transition-transform duration-500 [transform-style:preserve-3d] ${
+        className={`relative w-full lg:w-3/4 aspect-square transition-transform duration-500 [transform-style:preserve-3d] ${
           isFlipped ? '[transform:rotateY(180deg)]' : ''
         }`}
       >
         <div className="absolute inset-0 [backface-visibility:hidden]">
-          <Image
+         <Image
             alt="Cristian Arias"
             src="/images/Cristian_A.webp"
             style={{ objectFit: 'cover' }}
@@ -47,8 +47,8 @@ const FlipCard: React.FC = () => {
               className="filter blur-md scale-110"
             />
           </div>
-          <div className="relative z-10 flex flex-col justify-center items-start w-full h-full text-white bg-black bg-opacity-50 p-4 tablet:p-4 sm:p-4 md:p-2 lg:p-4 xl:p-8">
-            <ul className=" space-x-2 text-xs sm:text-sm md:text-sm lg:text-lg xl:text-xl xl:space-y-7 2xl:text-2xl 2xl:space-y-8">
+          <div className="relative z-10 flex flex-col justify-center items-start h-full text-white bg-black bg-opacity-50 p-7 tablet:p-12 sm:p-10 md:p-2 lg:p-4 xl:p-8">
+            <ul className="space-y-4 text-xl tablet:space-y-6 sm:space-y-16 sm:text-2xl md:space-y-3 md:text-sm lg:space-y-6 lg:text-lg xl:space-y-8 xl:text-xl 2xl:text-2xl">
               <li className="flex items-center">
                 <Code className="h-6 w-6 mr-2 text-blue-500" />
                 <span>Desarrollador Front-end</span>

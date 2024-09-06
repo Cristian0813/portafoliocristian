@@ -9,12 +9,12 @@ export default function App() {
       <section id="home">
         <HomePage />
       </section>
-      <section id="skills">
+    {/*   <section id="skills">
         <SkillsPage />
       </section>
       <section id="projects">
         <ProjectsPage />
-      </section>
+      </section> */}
     </main>
   );
 }
