@@ -7,8 +7,8 @@ import { Divider } from '@nextui-org/react';
 
 export default function HomePage() {
   return (
-    <section className="bg-blue-800 pt-8 pb-20 sm:pt-24 sm:px-4 md:pt-16 md:px-6 lg:pt-24 lg:px-12 xl:pt-12 xl:px-14 2xl:pt-12 2xl:pb-12 2xl:px-2 ">
-      <div className="container mx-auto max-w-6xl xl:max-w-6xl 2xl:max-w-7xl bg-white">
+    <section className="pt-8 pb-20 sm:pt-24 sm:px-4 md:pt-16 md:px-6 lg:pt-24 lg:px-12 xl:pt-12 xl:px-14 2xl:pt-12 2xl:pb-12 2xl:px-2 ">
+      <div className="container mx-auto max-w-6xl xl:max-w-6xl 2xl:max-w-7xl">
         <div className="flex items-center justify-center flex-col lg:flex-row p-2">
           <motion.div
             transition={{
@@ -21,7 +21,7 @@ export default function HomePage() {
             viewport={{ once: true }}
             className="w-full lg:w-2/3 p-4"
           >
-            <div className="text-center lg:text-left ">
+            <div className="text-center lg:text-left">
               <p className="text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl mb-2">
                 Hola, mi nombre es
               </p>
