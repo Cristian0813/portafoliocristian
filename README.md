@@ -12,25 +12,39 @@ cvactualizada/
 │       └── portfolio.pdf
 ├── src/
 │   ├── app/
-│   │   ├── contacto/
-│   │   │   └── page.tsx
-│   │   ├── proyectos.tsx
-│   │   │   └── page.tsx
-│   │   ├── sobremi.tsx
-│   │   │   └── page.tsx
+│   │   ├── (pages)/
+│   │   │   ├── contacto/
+│   │   │   │   └── page.tsx
+│   │   │   ├── educacion/
+│   │   │   │   └── page.tsx
+│   │   │   ├── experiencia
+│   │   │   │   └── page.tsx
+│   │   │   ├── habilidades
+│   │   │   │   └── page.tsx
+│   │   │   ├── inicio
+│   │   │   │   └── page.tsx
+│   │   │   ├── proyectos
+│   │   │   │   └── page.tsx
+│   │   │   └── sobremi
+│   │   │       └── page.tsx
 │   │   ├── favicon.ico
-│   │   ├── not-found.tsx
 │   │   ├── layout.tsx
+│   │   ├── not-found.tsx
 │   │   └── page.tsx
 │   ├── components/
-│   │   ├── flippedcard/
+│   │   ├── common/
+│   │   │   └── Logo.tsx
+│   │   ├── flipcard/
 │   │   │   └── FlipCard.tsx
 │   │   ├── footer/
 │   │   │   └── Footer.tsx
-│   │   ├── Header/
-│   │   │   └── Header.tsx
-│   │   ├── sidebar/
-│   │   │   └── SideBar.tsx
+│   │   ├── layout/
+│   │   │   └── header/
+│   |   │       ├── DesktopMenu.tsx
+│   |   │       ├── Header.tsx
+│   │   │       └── MobileMenu.tsx
+│   │   ├── skills/
+│   │   │   └── SillGrid.tsx
 │   │   └── ui/
 │   │       └── themeswitcher/
 │   │           ├── ThemeSwitcher.tsx
@@ -47,6 +61,8 @@ cvactualizada/
 │   │   │   └── HomePage.tsx
 │   │   ├── projects/
 │   │   │   └── ProjectsPage.tsx
+│   │   ├── education/
+│   │   │   └── EducationPage.tsx
 │   │   └── skill/
 │   │       └── SkillPage.tsx
 │   ├── hook/

@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@/styles/globals.css';
 import { ThemeProvider } from '@/utils/providers';
-import Header from '@/components/header/Header';
 import Footer from '@/components/footer/Footer';
+import Header from '@/components/layout/header/Header';
+import ErrorBoundary from './ErrorBoundary';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,7 +29,9 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
+          <ErrorBoundary >
           {children}
+          </ErrorBoundary>
           <Footer />
         </ThemeProvider>
       </body>

@@ -1,8 +1,11 @@
+// src/features/skill/SkillPage.tsx
+
 'use client';
 
 import React from 'react';
+import SkillsGrid from '@/components/skills/SkillGrid';
 
-const posts = [
+const skills = [
   {
     id: 1,
     title: 'FRONT END',
@@ -13,94 +16,65 @@ const posts = [
       'TypeScript',
       'React.js',
       'Next.js',
-      'Redux.js',
       'Bootstrap',
-      'Tailwind',
+      'Tailwind Css',
     ],
   },
   {
     id: 2,
     title: 'BACK END',
     description: [
-      'HTML5',
-      'CSS3',
-      'JavaScript',
-      'TypeScript',
-      'React.js',
-      'Next.js',
-      'Redux.js',
-      'Bootstrap',
-      'Tailwind',
+      'Node.js',
+      'Express.js',
+      'SQL',
+      'PostgreSQL',
+      'Java',
+      'MongoDB',
+      'Git',
+      'APIs',
+      'Python',
     ],
   },
   {
     id: 3,
     title: 'SOPORTE TÉCNICO',
     description: [
-      'HTML5',
-      'CSS3',
-      'JavaScript',
-      'TypeScript',
-      'React.js',
-      'Next.js',
-      'Redux.js',
-      'Bootstrap',
-      'Tailwind',
+      'Soporte técnico en sistemas',
+      'Paquetería de Microsoft',
+      'Mantenimiento preventivo de equipos de cómputo',
+      'Instalación y actualización de software',
+      'Mantenimiento de drivers',
+      'Gestión de backups',
+      'Instalación y configuración de sistemas operativos Windows',
     ],
   },
   {
     id: 4,
     title: 'BLANDAS',
     description: [
-      'HTML5',
-      'CSS3',
-      'JavaScript',
-      'TypeScript',
-      'React.js',
-      'Next.js',
-      'Redux.js',
-      'Bootstrap',
-      'Tailwind',
+      'Resolución de problemas',
+      'Comunicación efectiva',
+      'Gestión del tiempo',
+      'Trabajo en equipo',
+      'Gestión de proyectos y metodología Agile',
+      'Aplicación del Marco de Trabajo Scrum',
     ],
   },
 ];
 
-export default function SkillsPage() {
-
+export default function SkillPage() {
   return (
     <section className="flex items-center justify-center p-2">
       <div className="container mx-auto max-w-7xl">
         <div className="p-2">
           <div className="mx-auto p-6">
             <div className="mx-auto max-w-2xl text-center">
-              <h2 className="text-4xl font-bold tracking-tight">
-                Habilidades
-              </h2>
+              <h2 className="text-4xl font-bold tracking-tight">Habilidades</h2>
             </div>
-            <div className="mx-auto mt-6 max-w-6xl grid grid-cols-4 gap-x-8 gap-y-16 pl-8">
-              {posts.map((post) => (
-                <article
-                  key={post.id}
-                  className="flex max-w-xl flex-col items-start justify-between p-4 rounded-lg dark:shadow-inner dark:shadow-gray-600"
-                >
-                  <div className="group relative">
-                    <h3 className="mt-3 text-xl font-semibold leading-6">
-                      <span className="absolute inset-0" />
-                      {post.title}
-                    </h3>
-                    <ul className="mt-5 list-disc list-inside text-lg leading-6">
-                      {post.description.map((item, index) => (
-                        <li key={index}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </article>
-              ))}
-            </div>
+            <SkillsGrid skills={skills} />
           </div>
         </div>
       </div>
-      
     </section>
   );
 }
