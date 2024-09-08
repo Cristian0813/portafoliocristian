@@ -6,7 +6,7 @@ import SkillsPage from '@/features/skills/SkillsPage';
 
 export default function App() {
   return (
-    <main className="pt-4">
+    <main className="pt-4 min-h-screen">
       {/* <section id="home"></section> */}
         <HomePage />
         <SkillsPage />
