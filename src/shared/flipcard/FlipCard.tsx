@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import useFlipHook from '@/hook/useFlipHook';
+import useFlipHook from '@/core/hook/useFlipHook';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 

@@ -1,7 +1,7 @@
 import { Dialog, DialogPanel } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import ThemeSwitcher from '@/components/ui/themeswitcher/ThemeSwitcher';
+import ThemeSwitcher from '@/shared/ui/themeswitcher/ThemeSwitcher';
 
 interface MobileMenuProps {
   isOpen: boolean;

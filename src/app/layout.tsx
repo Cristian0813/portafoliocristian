@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import '@/styles/globals.css';
-import { ThemeProvider } from '@/utils/providers';
-import Footer from '@/components/footer/Footer';
-import Header from '@/components/layout/header/Header';
-import ErrorBoundary from './ErrorBoundary';
+import '@/shared/styles/globals.css';
+import { ThemeProvider } from '@/core/utils/providers';
+import Layout from '@/core/components/layout';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,11 +26,9 @@ export default function RootLayout({
         className={`${inter.className} bg-zinc-100 dark:bg-slate-950 text-slate-900 dark:text-slate-300 `}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
-          <ErrorBoundary >
+          <Layout >
           {children}
-          </ErrorBoundary>
-          <Footer />
+          </Layout>
         </ThemeProvider>
       </body>
     </html>

@@ -1,4 +1,3 @@
-// src/components/common/Logo.tsx
 import Link from 'next/link';
 import Image from 'next/image';
 

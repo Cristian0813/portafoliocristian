@@ -2,7 +2,7 @@
 
 import React from 'react';
 import HeroSection from './components/HeroSection';
-import FlipCard from '@/components/flipcard/FlipCard';
+import FlipCard from '@/shared/flipcard/FlipCard';
 
 export default function HomePage() {
   return (

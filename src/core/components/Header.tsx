@@ -2,9 +2,9 @@
 'use client';
 
 import { useState } from 'react';
-import DesktopMenu from './DesktopMenu';
-import MobileMenu from './MobileMenu';
-import Logo from '@/components/common/Logo';
+import DesktopMenu from './header/DesktopMenu';
+import MobileMenu from './header/MobileMenu';
+import Logo from '@/shared/common/Logo';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

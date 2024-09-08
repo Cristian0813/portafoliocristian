@@ -1,18 +1,11 @@
-// src/components/skills/SkillsGrid.tsx
-
 import React from 'react';
+import { SkillsArray } from '../type';
 
-interface Skill {
-  id: number;
-  title: string;
-  description: string[];
+interface SkillGridProps {
+  skills: SkillsArray;
 }
 
-interface SkillsGridProps {
-  skills: Skill[];
-}
-
-const SkillsGrid: React.FC<SkillsGridProps> = ({ skills }) => {
+export default function SkillGrid({ skills }: SkillGridProps) {
   return (
     <div className="mx-auto mt-6 max-w-4xl grid grid-cols-2 gap-x-16 gap-y-16 pl-8">
       {skills.map((skill) => (
@@ -36,5 +29,3 @@ const SkillsGrid: React.FC<SkillsGridProps> = ({ skills }) => {
     </div>
   );
 };
-
-export default SkillsGrid;

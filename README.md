@@ -17,60 +17,81 @@ cvactualizada/
 │   │   │   │   └── page.tsx
 │   │   │   ├── educacion/
 │   │   │   │   └── page.tsx
-│   │   │   ├── experiencia
+│   │   │   ├── experiencia/
 │   │   │   │   └── page.tsx
-│   │   │   ├── habilidades
+│   │   │   ├── habilidades/
 │   │   │   │   └── page.tsx
-│   │   │   ├── inicio
+│   │   │   ├── inicio/
 │   │   │   │   └── page.tsx
-│   │   │   ├── proyectos
+│   │   │   ├── proyectos/
 │   │   │   │   └── page.tsx
-│   │   │   └── sobremi
+│   │   │   └── sobremi/
 │   │   │       └── page.tsx
 │   │   ├── favicon.ico
 │   │   ├── layout.tsx
 │   │   ├── not-found.tsx
 │   │   └── page.tsx
-│   ├── components/
-│   │   ├── common/
-│   │   │   └── Logo.tsx
-│   │   ├── flipcard/
-│   │   │   └── FlipCard.tsx
-│   │   ├── footer/
-│   │   │   └── Footer.tsx
-│   │   ├── layout/
-│   │   │   └── header/
-│   |   │       ├── DesktopMenu.tsx
-│   |   │       ├── Header.tsx
-│   │   │       └── MobileMenu.tsx
-│   │   ├── skills/
-│   │   │   └── SillGrid.tsx
-│   │   └── ui/
-│   │       └── themeswitcher/
-│   │           ├── ThemeSwitcher.tsx
-│   │           ├── MoonIcon.tsx
-│   │           └── SunIcon.tsx
+│   ├── core/
+│   │   ├── components/
+│   │   │   ├── layout/
+│   │   │   │   └── header/
+│   |   │   │       ├── DesktopMenu.tsx
+│   │   │   │       └── MobileMenu.tsx
+│   │   │   ├── footer/
+│   │   │   │   └── SocialFooter.tsx
+│   │   │   ├── Layout.tsx
+│   │   │   ├── Header.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   └── ErrorBoundary.tsx
+│   │   ├── hooks/
+│   │   │   └── useFlipHook.tsx
+│   │   └── utils/
+│   │       └── providers.tsx
 │   ├── features/
 │   │   ├── about/
+│   │   │   ├── components/
+│   │   │   │   └── AboutContent.tsx
 │   │   │   └── AboutPage.tsx
 │   │   ├── contact/
+│   │   │   ├── components/
+│   │   │   │   └── ContactForm.tsx
 │   │   │   └── ContactPage.tsx
 │   │   ├── experience/
+│   │   │   ├── components/
+│   │   │   │   └── ExperienceTimeline.tsx
 │   │   │   └── ExperiencePage.tsx
 │   │   ├── home/
+│   │   │   ├── components/
+│   │   │   │   ├── HeroSection.tsx
+│   │   │   │   └── IntroductionText.tsx
 │   │   │   └── HomePage.tsx
 │   │   ├── projects/
+│   │   │   ├── components/
+│   │   │   │   └── ProjectGrid.tsx
 │   │   │   └── ProjectsPage.tsx
 │   │   ├── education/
+│   │   │   ├── components/
+│   │   │   │   └── EducationList.tsx
 │   │   │   └── EducationPage.tsx
-│   │   └── skill/
-│   │       └── SkillPage.tsx
-│   ├── hook/
-│   │   └── useFlipHook.tsx
-│   ├── styles/
-│   │   └── globals.css
-│   ├── utils/
-│       └── providers.tsx
+│   │   └── skills/
+│   │       ├── types/
+│   │       │   └── index.ts
+│   │       ├── data/
+│   │       │   └── skillsData.ts
+│   │       ├── components/
+│   │       │   └── SkillGrid.tsx
+│   │       └── SkillsPage.tsx
+│   └── shared/
+│       ├── components/
+│       │   ├── Logo.tsx
+│       │   ├── FlipCard.tsx
+│       │   └── ui/
+│       │       └── ThemeSwitcher/
+│       │           ├── ThemeSwitcher.tsx
+│       │           ├── MoonIcon.tsx
+│       │           └── SunIcon.tsx
+│       └── styles/
+│           └── globals.css 
 ├── .eslintrc.json
 ├── .gitignore
 ├── next-env.d.ts

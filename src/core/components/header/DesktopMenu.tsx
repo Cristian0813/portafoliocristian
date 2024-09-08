@@ -1,7 +1,6 @@
-// src/components/layout/Header/DesktopMenu.tsx
 import Link from 'next/link';
 import { PopoverGroup } from '@headlessui/react';
-import ThemeSwitcher from '@/components/ui/themeswitcher/ThemeSwitcher';
+import ThemeSwitcher from '@/shared/ui/themeswitcher/ThemeSwitcher';
 
 export default function DesktopMenu() {
   return (
