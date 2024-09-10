@@ -12,15 +12,15 @@ const FlipCard: React.FC = () => {
   const { isFlipped, flip } = useFlipHook();
   return (
     <motion.div
-      className="w-2/4 sm:w-1/3 pt-10 lg:w-1/4 flex items-center justify-center p-2 [perspective:1000px] cursor-pointer"
+      className="w-2/4 sm:w-1/3 mt-10 lg:w-1/4 flex items-center justify-center py-2 my-4 [perspective:1000px] cursor-pointer"
       onClick={flip}
       transition={{
         duration: 0.5,
         type: 'spring',
         bounce: 0.4,
       }}
-      initial={{ translateX: '20em', opacity: 0 }}
-      whileInView={{ translateX: '0em', opacity: 1 }}
+      initial={{ translateX: 100, opacity: 0 }}
+      whileInView={{ translateX: 0, opacity: 1 }}
       viewport={{ once: true }}
     >
       <div

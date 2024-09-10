@@ -15,16 +15,13 @@ const config: Config = {
         PurpleColor: '#250069',
         DarkPurpleColor: '#7A11B2',
       },
-
-      screens: {
-        tablet: '420px',
-      },
-      fontSize: {
-        tb: ['120px', '130px'],
+      boxShadow: {
+        custom: '0px 3px 10px 1px #202D3C',
+        darkCustom: '0px 3px 10px 1px #CBD5E1',
       },
     },
   },
-  plugins: [nextui(),],
+  plugins: [nextui()],
   darkMode: 'class',
 };
 export default config;

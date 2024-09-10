@@ -4,7 +4,7 @@ export const skills: SkillsArray = [
   {
     id: 1,
     title: 'FRONT END',
-    description: [
+    items: [
       'HTML5',
       'CSS3',
       'JavaScript',
@@ -18,7 +18,7 @@ export const skills: SkillsArray = [
   {
     id: 2,
     title: 'BACK END',
-    description: [
+    items: [
       'Node.js',
       'Express.js',
       'SQL',
@@ -33,20 +33,20 @@ export const skills: SkillsArray = [
   {
     id: 3,
     title: 'SOPORTE TÉCNICO',
-    description: [
+    items: [
       'Soporte técnico en sistemas',
       'Paquetería de Microsoft',
-      'Mantenimiento preventivo de equipos de cómputo',
+      'Mantenimiento preventivo de PC',
       'Instalación y actualización de software',
       'Mantenimiento de drivers',
       'Gestión de backups',
-      'Instalación y configuración de sistemas operativos Windows',
+      'Instalación y configuración de Windows',
     ],
   },
   {
     id: 4,
     title: 'BLANDAS',
-    description: [
+    items: [
       'Resolución de problemas',
       'Comunicación efectiva',
       'Gestión del tiempo',
