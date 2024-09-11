@@ -17,13 +17,13 @@ const HeroSection = () => {
       className="w-full lg:w-2/3 p-4"
     >
       <div className="text-center lg:text-left">
-        <p className="text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl mb-2">
+        <p className="text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl mb-2 font-semibold">
           Hola, mi nombre es
         </p>
-        <h1 className="text-6xl sm:text-7xl lg:text-6xl xl:text-5xl 2xl:text-6xl font-bold mb-2 text-DarkPurpleColor dark:text-slate-300">
+        <h1 className="text-6xl sm:text-7xl lg:text-6xl xl:text-5xl 2xl:text-6xl font-bold mb-2 text-ColorPurpleDark dark:text-ColorPurple">
           Cristian Arias
         </h1>
-        <p className="text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl mb-2">
+        <p className="text-2xl sm:text-3xl lg:text-2xl 2xl:text-4xl mb-2 font-semibold">
           Desarrollador Full Stack
         </p>
       </div>

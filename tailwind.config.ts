@@ -12,8 +12,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        PurpleColor: '#250069',
-        DarkPurpleColor: '#7A11B2',
+        ColorPurple: '#7A11B2',
+        ColorPurpleDark: '#34074C',
       },
       boxShadow: {
         custom: '0px 3px 10px 1px #202D3C',

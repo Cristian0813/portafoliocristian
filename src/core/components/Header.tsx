@@ -10,7 +10,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md dark:bg-slate-950/75">
+    <header className="fixed top-0 left-0 right-0 z-40 backdrop-blur-md">
       <nav className="mx-auto flex max-w-full items-center justify-between p-2 lg:px-8">
         <Logo />
         <DesktopMenu />
