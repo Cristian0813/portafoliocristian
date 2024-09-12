@@ -16,7 +16,7 @@ const config: Config = {
         ColorPurpleDark: '#34074C',
       },
       boxShadow: {
-        custom: '0px 3px 10px 1px #202D3C',
+        Custom: '0px 1px 15px 1px #9CA3AF',
         darkCustom: '0px 1px 15px 1px #250536',
       },
     },
