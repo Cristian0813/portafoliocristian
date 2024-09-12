@@ -1,13 +1,13 @@
 'use client';
 
 import React from 'react';
-import SkillGrid from './components/SkillGrid';
-import { skills } from './data/SkillsData';
+import { skillsData } from './data/SkillsData';
 import { motion } from 'framer-motion';
+import { SkillGrid } from './components/SkillGrid';
 
 export default function SkillPage() {
   return (
-    <section className="flex items-center justify-center py-2 my-8">
+    <section className="flex items-center justify-center py-4 my-4 sm:my-8 sm:py-8 md:my-9 md:py-9 lg:mt-9 lg:py-9 xl:my-10 xl:py-10 2xl:my-12 2xl:py-12">
       <div className="container mx-auto max-w-8xl">
         <div className="py-2">
           <div className="mx-auto py-2">
@@ -26,7 +26,7 @@ export default function SkillPage() {
                 Habilidades
               </h2>
             </motion.div>
-            <SkillGrid skills={skills} />
+            <SkillGrid skills={skillsData} />
           </div>
         </div>
       </div>

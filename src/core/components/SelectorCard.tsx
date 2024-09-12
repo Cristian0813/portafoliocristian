@@ -16,9 +16,8 @@ const product = {
   price: '$192',
   rating: 3.9,
   reviewCount: 117,
-  href: '#',
-  imageSrc:
-    'https://tailwindui.com/img/ecommerce-images/product-quick-preview-02-detail.jpg',
+  href: 'https://www.google.com.co',
+  imageSrc: '/images/portfolio/atm/atm_1.png',
   imageAlt: 'Two each of gray, white, and black shirts arranged on table.',
   colors: [
     { name: 'White', class: 'bg-white', selectedClass: 'ring-gray-400' },

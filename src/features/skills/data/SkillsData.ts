@@ -1,6 +1,6 @@
 import { SkillsArray } from "../type";
 
-export const skills: SkillsArray = [
+export const skillsData: SkillsArray = [
   {
     id: 1,
     title: 'FRONT END',

@@ -4,7 +4,6 @@ import React from 'react';
 import useFlipHook from '@/core/hook/useFlipHook';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-
 import { ComputerDesktopIcon } from '@heroicons/react/24/outline';
 import { Headset, Code, Braces} from 'lucide-react';
 
