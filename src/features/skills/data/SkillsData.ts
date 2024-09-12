@@ -2,7 +2,6 @@ import { SkillsArray } from "../type";
 
 export const skillsData: SkillsArray = [
   {
-    id: 1,
     title: 'FRONT END',
     items: [
       'HTML5',
@@ -16,7 +15,6 @@ export const skillsData: SkillsArray = [
     ],
   },
   {
-    id: 2,
     title: 'BACK END',
     items: [
       'Node.js',
@@ -31,7 +29,6 @@ export const skillsData: SkillsArray = [
     ],
   },
   {
-    id: 3,
     title: 'SOPORTE TÉCNICO',
     items: [
       'Soporte técnico en sistemas',
@@ -44,7 +41,6 @@ export const skillsData: SkillsArray = [
     ],
   },
   {
-    id: 4,
     title: 'BLANDAS',
     items: [
       'Resolución de problemas',

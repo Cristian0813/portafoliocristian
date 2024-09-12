@@ -1,7 +1,7 @@
 
 import SelectorCard from '@/core/components/SelectorCard';
 import HomePage from '@/features/home/HomePage';
-import ProjectsPage from '@/features/projects/ProjectsPage';
+import ProjectPage from '@/features/projects/ProjectPage';
 import SkillsPage from '@/features/skills/SkillsPage';
 import { Divider } from '@nextui-org/react';
 
@@ -11,7 +11,7 @@ export default function App() {
       {/* <section id="home"></section> */}
       <HomePage />
       <SkillsPage />
-      <ProjectsPage />
+      <ProjectPage />
       <SelectorCard />
     </main>
   );

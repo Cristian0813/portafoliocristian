@@ -1,9 +1,7 @@
-'use client'
-
 import React from 'react';
 import { Card, CardBody, CardFooter, Image } from '@nextui-org/react';
 
-export default function ProjectsPage() {
+export default function ProjectCategory() {
   const list = [
     {
       title: 'Orange',
