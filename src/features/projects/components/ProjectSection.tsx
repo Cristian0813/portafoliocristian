@@ -12,7 +12,7 @@ export const ProjectSection = () => {
         delay: 0.5,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className="bg-orange-600 mx-auto max-w-2xl text-center"
+      className="mx-auto max-w-2xl text-center"
     >
       <h2 className="text-4xl font-semibold text-ColorPurpleDark dark:text-ColorPurple">
         Proyectos
