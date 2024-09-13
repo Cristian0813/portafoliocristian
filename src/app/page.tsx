@@ -1,9 +1,6 @@
-
-import SelectorCard from '@/core/components/SelectorCard';
 import HomePage from '@/features/home/HomePage';
 import ProjectPage from '@/features/projects/ProjectPage';
 import SkillsPage from '@/features/skills/SkillsPage';
-import { Divider } from '@nextui-org/react';
 
 export default function App() {
   return (
@@ -12,7 +9,6 @@ export default function App() {
       <HomePage />
       <SkillsPage />
       <ProjectPage />
-      <SelectorCard />
     </main>
   );
 }
