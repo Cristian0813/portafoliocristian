@@ -33,7 +33,7 @@ const FlipCard: React.FC = () => {
             src="/images/Cristian_A.webp"
             style={{ objectFit: 'cover' }}
             fill
-            className="rounded-3xl dark:opacity-75"
+            className="rounded-3xl dark:contrast-75 dark:brightness-75"
           />
         </div>
         <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)] overflow-hidden rounded-3xl">

@@ -4,7 +4,7 @@ import SkillsPage from '@/features/skills/SkillsPage';
 
 export default function App() {
   return (
-    <main className="py-2 min-h-screen">
+    <main className="relative py-2 min-h-screen overflow-hidden">
       {/* <section id="home"></section> */}
       <HomePage />
       <SkillsPage />

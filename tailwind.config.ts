@@ -1,5 +1,5 @@
-import {nextui} from '@nextui-org/react';
-import type { Config } from "tailwindcss";
+import { nextui } from '@nextui-org/react';
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -18,6 +18,20 @@ const config: Config = {
       boxShadow: {
         Custom: '0px 1px 15px 1px #9CA3AF',
         darkCustom: '0px 1px 15px 1px #250536',
+      },
+      keyframes: {
+        floatSlow: {
+          '0%, 100%': { transform: 'translateY(0) rotate(45deg)' },
+          '50%': { transform: 'translateY(-20px) rotate(45deg)' },
+        },
+        floatFast: {
+          '0%, 100%': { transform: 'translateY(0) rotate(45deg)' },
+          '50%': { transform: 'translateY(-40px) rotate(45deg)' },
+        },
+      },
+      animation: {
+        'float-slow': 'floatSlow 60s ease-in-out infinite',
+        'float-fast': 'floatFast 60s ease-in-out infinite',
       },
     },
   },
