@@ -1,7 +1,7 @@
+//src/core/components/Layout.tsx
 
 import React from 'react';
 import Header from './Header';
-import ErrorBoundary from './ErrorBoundary';
 import Footer from './footer/Footer';
 import { Background } from '@/shared/ui/Background';
 
@@ -14,9 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     <>
       <Background />
       <Header />
-      <ErrorBoundary>
         <main className="min-h-screen">{children}</main>
-      </ErrorBoundary>
       <Footer />
     </>
   );

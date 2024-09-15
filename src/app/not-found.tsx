@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function NotFound() {
   return (
     <>
-      <main className="grid min-h-screen place-items-center px-6 py-24 sm:py-32 lg:px-8">
+      <main className="relative grid min-h-screen place-items-center px-6 py-24 sm:py-32 lg:px-8">
           <div className="text-center">
             <p className="text-xl font-semibold text-indigo-600 dark:text-indigo-300">
               404
