@@ -20,18 +20,53 @@ const config: Config = {
         darkCustom: '0px 1px 15px 1px #250536',
       },
       keyframes: {
-        floatSlow: {
-          '0%, 100%': { transform: 'translateY(0) rotate(45deg)' },
-          '50%': { transform: 'translateY(-20px) rotate(45deg)' },
+        floatTop: {
+          '0%, 100%': { transform: 'translate(-50%, 0)' },
+          '50%': { transform: 'translate(-50%, 20px)' },
         },
-        floatFast: {
-          '0%, 100%': { transform: 'translateY(0) rotate(45deg)' },
-          '50%': { transform: 'translateY(-40px) rotate(45deg)' },
+        floatRight: {
+          '0%, 100%': { transform: 'translate(0, -50%)' },
+          '50%': { transform: 'translate(-20px, -50%)' },
+        },
+        floatBottom: {
+          '0%, 100%': { transform: 'translate(-50%, 0)' },
+          '50%': { transform: 'translate(-50%, -20px)' },
+        },
+        floatLeft: {
+          '0%, 100%': { transform: 'translate(0, -50%)' },
+          '50%': { transform: 'translate(20px, -50%)' },
+        },
+        floatRandom1: {
+          '0%, 100%': { transform: 'translate(0, 0) rotate(0deg)' },
+          '50%': { transform: 'translate(100px, 100px) rotate(180deg)' },
+        },
+        floatRandom2: {
+          '0%, 100%': { transform: 'translate(0, 0) rotate(0deg)' },
+          '50%': { transform: 'translate(-150px, 50px) rotate(-90deg)' },
+        },
+        floatRandom3: {
+          '0%, 100%': { transform: 'translate(0, 0) rotate(0deg)' },
+          '50%': { transform: 'translate(50px, -100px) rotate(45deg)' },
+        },
+        floatRandom4: {
+          '0%, 100%': { transform: 'translate(0, 0) rotate(0deg)' },
+          '50%': { transform: 'translate(-100px, -50px) rotate(135deg)' },
+        },
+        floatRandom5: {
+          '0%, 100%': { transform: 'translate(0, 0) rotate(0deg)' },
+          '50%': { transform: 'translate(120px, -80px) rotate(-45deg)' },
         },
       },
       animation: {
-        'float-slow': 'floatSlow 60s ease-in-out infinite',
-        'float-fast': 'floatFast 60s ease-in-out infinite',
+        'float-top': 'floatTop 15s ease-in-out infinite',
+        'float-right': 'floatRight 18s ease-in-out infinite',
+        'float-bottom': 'floatBottom 20s ease-in-out infinite',
+        'float-left': 'floatLeft 17s ease-in-out infinite',
+        'float-random-1': 'floatRandom1 25s ease-in-out infinite',
+        'float-random-2': 'floatRandom2 30s ease-in-out infinite',
+        'float-random-3': 'floatRandom3 35s ease-in-out infinite',
+        'float-random-4': 'floatRandom4 28s ease-in-out infinite',
+        'float-random-5': 'floatRandom5 32s ease-in-out infinite',
       },
     },
   },
