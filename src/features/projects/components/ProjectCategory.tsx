@@ -22,7 +22,7 @@ export const ProjectCategory: React.FC<ProjectCategoryProps> = ({
 
   return (
     <>
-      <div className="py-6 gap-2 grid grid-cols-2 sm:grid-cols-4">
+      <div className="py-6 gap-2 grid grid-cols-2 xl:grid-cols-3">
         {projects.map((project, index) => (
           <Card
             key={index}
