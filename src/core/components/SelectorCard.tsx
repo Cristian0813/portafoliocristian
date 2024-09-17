@@ -36,7 +36,7 @@ export default function SelectorCard({
             transition
             className="flex w-full transform text-left text-base transition data-[closed]:translate-y-4 data-[closed]:opacity-0 data-[enter]:duration-300 data-[leave]:duration-200 data-[enter]:ease-out data-[leave]:ease-in md:my-8 md:max-w-2xl md:px-4 data-[closed]:md:translate-y-0 data-[closed]:md:scale-95 lg:max-w-4xl"
           >
-            <div className="relative flex w-full items-center overflow-hidden bg-white px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8">
+            <div className="relative flex w-full items-center overflow-hidden bg-stone-200 dark:bg-neutral-800 px-4 pb-8 pt-14 shadow-2xl sm:px-6 sm:pt-8 md:p-6 lg:p-8 rounded-3xl">
               <button
                 type="button"
                 onClick={() => setOpen(false)}
@@ -47,7 +47,7 @@ export default function SelectorCard({
               </button>
 
               <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-12 lg:gap-x-8">
-                <div className="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:col-span-4 lg:col-span-5">
+                <div className="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg sm:col-span-4 lg:col-span-5">
                   <Image
                     alt={project.title}
                     src={project.imageSrc}
@@ -55,7 +55,7 @@ export default function SelectorCard({
                   />
                 </div>
                 <div className="sm:col-span-8 lg:col-span-7">
-                  <h2 className="text-2xl font-bold text-gray-900 sm:pr-12">
+                  <h2 className="text-2xl font-bold text-ColorPurpleDark dark:text-gray-300  sm:pr-12">
                     {project.title}
                   </h2>
 
@@ -90,7 +90,7 @@ export default function SelectorCard({
                         href={project.hrefRepo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-center"
+                        className="flex-1 rounded-md border border-transparent bg-indigo-600 dark:bg-indigo-900 px-8 py-3 text-base font-medium text-slate-300 dark:text-white hover:bg-indigo-700 dark:hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-center"
                       >
                         Ver repositorio
                       </a>
@@ -98,7 +98,7 @@ export default function SelectorCard({
                         href={project.hrefDemo}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex-1 rounded-md border border-transparent bg-indigo-100 px-8 py-3 text-base font-medium text-indigo-700 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-center"
+                        className="flex-1 rounded-md border border-transparent bg-stone-100 px-8 py-3 text-base font-medium text-indigo-800 hover:bg-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-center"
                       >
                         Ver Demo
                       </a>
