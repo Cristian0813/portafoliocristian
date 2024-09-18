@@ -8,7 +8,9 @@ export default function App() {
       {/* <section id="home"></section> */}
       <HomePage />
       <SkillsPage />
+      <section id="proyectos">
       <ProjectPage />
+      </section>
     </main>
   );
 }
