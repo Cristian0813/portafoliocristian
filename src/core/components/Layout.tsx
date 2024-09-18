@@ -1,5 +1,3 @@
-//src/core/components/Layout.tsx
-
 import React from 'react';
 import Header from './Header';
 import Footer from './footer/Footer';
@@ -11,12 +9,12 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <>
-    <AnimatedBackground />
+    <div className="flex flex-col min-h-screen">
+      <AnimatedBackground />
       <Header />
-        <main className="min-h-screen">{children}</main>
+      <main className="flex-grow">{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
 

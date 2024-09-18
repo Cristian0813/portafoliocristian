@@ -11,6 +11,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sofadi: ['Sofadi One', 'cursive'],
+      },
       /* COLORES */
       colors: {
         ColorPurple: '#7A11B2',
