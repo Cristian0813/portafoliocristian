@@ -8,7 +8,7 @@ export default function Isotipo() {
         <span className="sr-only">Cristian Arias</span>
         <Image
           alt="Cristian Arias"
-          src="/IsotipoCA.svg"
+          src="/IsotipoCARO.svg"
           className="h-44 w-44 hover:brightness-150 dark:invert dark:brightness-0 hover:dark:invert-0 hover:dark:brightness-150"
           width={100}
           height={100}
