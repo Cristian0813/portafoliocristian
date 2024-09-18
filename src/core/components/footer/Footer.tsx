@@ -1,36 +1,52 @@
-'use client'
+'use client';
 
+import Isotipo from '@/shared/common/Isotipo';
 import Logo from '@/shared/common/Logo';
 import { Facebook, Github, Instagram, Linkedin } from 'lucide-react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { useRouter } from 'next/navigation';
+import React from 'react';
 
-const Footer = () => {
+interface LinkItem {
+  name: string;
+  href: string;
+}
+
+interface SocialItem {
+  icon: React.ElementType;
+  href: string;
+  label: string;
+}
+
+const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
-  const pathname = usePathname();
+  const router = useRouter();
 
-  const links = [
+  const links: LinkItem[] = [
     { name: 'Sobre mí', href: '/Sobremi' },
     { name: 'Proyectos', href: '/#proyectos' },
     { name: 'Contacto', href: '/contacto' },
   ];
 
-  const handleSmoothScroll = (
+  const socialLinks: SocialItem[] = [
+    { icon: Facebook, href: '#', label: 'Facebook' },
+    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Github, href: '#', label: 'GitHub' },
+  ];
+
+  const handleClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string
   ) => {
     e.preventDefault();
-
-    // Si estamos en la página de inicio, realizamos el desplazamiento suave
-    if (pathname === '/') {
-      const targetId = href.replace('/#', '');
-      const element = document.getElementById(targetId);
+    if (href.startsWith('/#')) {
+      const id = href.substring(2);
+      const element = document.getElementById(id);
       if (element) {
-        const headerOffset = 100; // Ajusta este valor según la altura de tu encabezado fijo
+        const offset = 100; // Ajusta este valor según sea necesario
         const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition =
-          elementPosition + window.pageYOffset - headerOffset;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
 
         window.scrollTo({
           top: offsetPosition,
@@ -38,8 +54,7 @@ const Footer = () => {
         });
       }
     } else {
-      // Si no estamos en la página de inicio, navegamos a la página de inicio con el hash
-      window.location.href = href;
+      router.push(href);
     }
   };
 
@@ -49,16 +64,17 @@ const Footer = () => {
         <div className="py-12 flex flex-col md:flex-row justify-between items-center md:items-start">
           {/* Logo y descripción */}
           <div className="w-full md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
+          <Isotipo />
           <Logo />
-            {/* <Link href="/" className="inline-block mb-4">
+            {/* <a href="/" className="inline-block mb-4">
               <Image
                 src="/IsotipoCA.svg"
                 alt="Cristian Arias"
-                className="w-44 hover:brightness-150 dark:invert dark:brightness-0 hover:dark:invert-0 hover:dark:brightness-150"
-                width={100}
-                height={100}
+                width={120}
+                height={120}
+                className="hover:opacity-80 transition-opacity duration-300 dark:invert mx-auto md:mx-0"
               />
-            </Link> */}
+            </a> */}
             <p className="text-base md:text-lg max-w-md mx-auto md:mx-0">
               Desarrollador web apasionado por crear experiencias digitales
               únicas y funcionales.
@@ -75,8 +91,8 @@ const Footer = () => {
                   <li key={link.name}>
                     <a
                       href={link.href}
-                      onClick={(e) => handleSmoothScroll(e, link.href)}
-                      className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300"
+                      onClick={(e) => handleClick(e, link.href)}
+                      className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300 cursor-pointer"
                     >
                       {link.name}
                     </a>
@@ -89,12 +105,7 @@ const Footer = () => {
             <div className="text-center md:text-left">
               <h3 className="text-lg font-semibold mb-4">Sígueme en</h3>
               <div className="flex justify-center md:justify-start space-x-4">
-                {[
-                  { icon: Facebook, href: '#', label: 'Facebook' },
-                  { icon: Instagram, href: '#', label: 'Instagram' },
-                  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-                  { icon: Github, href: '#', label: 'GitHub' },
-                ].map((social) => (
+                {socialLinks.map((social) => (
                   <a
                     key={social.label}
                     href={social.href}
