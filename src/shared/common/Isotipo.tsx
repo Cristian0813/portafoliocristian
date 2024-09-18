@@ -9,7 +9,7 @@ export default function Isotipo() {
         <Image
           alt="Cristian Arias"
           src="/IsotipoCA.svg"
-          className="h-44 hover:brightness-150 dark:invert dark:brightness-0 hover:dark:invert-0 hover:dark:brightness-150"
+          className="h-44 w-44 hover:brightness-150 dark:invert dark:brightness-0 hover:dark:invert-0 hover:dark:brightness-150"
           width={100}
           height={100}
           priority
