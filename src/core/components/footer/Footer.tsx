@@ -1,9 +1,47 @@
+'use client'
+
+import Logo from '@/shared/common/Logo';
 import { Facebook, Github, Instagram, Linkedin } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const pathname = usePathname();
+
+  const links = [
+    { name: 'Sobre mí', href: '/Sobremi' },
+    { name: 'Proyectos', href: '/#proyectos' },
+    { name: 'Contacto', href: '/contacto' },
+  ];
+
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string
+  ) => {
+    e.preventDefault();
+
+    // Si estamos en la página de inicio, realizamos el desplazamiento suave
+    if (pathname === '/') {
+      const targetId = href.replace('/#', '');
+      const element = document.getElementById(targetId);
+      if (element) {
+        const headerOffset = 100; // Ajusta este valor según la altura de tu encabezado fijo
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth',
+        });
+      }
+    } else {
+      // Si no estamos en la página de inicio, navegamos a la página de inicio con el hash
+      window.location.href = href;
+    }
+  };
 
   return (
     <footer className="z-10 bg-gradient-to-r from-zinc-100 to-zinc-200 dark:from-neutral-800 dark:to-neutral-900 text-zinc-700 dark:text-zinc-300">
@@ -11,15 +49,16 @@ const Footer = () => {
         <div className="py-12 flex flex-col md:flex-row justify-between items-center md:items-start">
           {/* Logo y descripción */}
           <div className="w-full md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
-            <Link href="/" className="inline-block mb-4">
+          <Logo />
+            {/* <Link href="/" className="inline-block mb-4">
               <Image
                 src="/IsotipoCA.svg"
                 alt="Cristian Arias"
-                width={120}
-                height={120}
-                className="hover:opacity-80 transition-opacity duration-300 dark:invert mx-auto md:mx-0"
+                className="w-44 hover:brightness-150 dark:invert dark:brightness-0 hover:dark:invert-0 hover:dark:brightness-150"
+                width={100}
+                height={100}
               />
-            </Link>
+            </Link> */}
             <p className="text-base md:text-lg max-w-md mx-auto md:mx-0">
               Desarrollador web apasionado por crear experiencias digitales
               únicas y funcionales.
@@ -32,14 +71,15 @@ const Footer = () => {
             <div className="text-center md:text-left">
               <h3 className="text-lg font-semibold mb-4">Enlaces rápidos</h3>
               <ul className="space-y-2">
-                {['Sobre mí', 'Proyectos', 'Contacto'].map((item) => (
-                  <li key={item}>
-                    <Link
-                      href={`/${item.toLowerCase().replace(' ', '-')}`}
+                {links.map((link) => (
+                  <li key={link.name}>
+                    <a
+                      href={link.href}
+                      onClick={(e) => handleSmoothScroll(e, link.href)}
                       className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors duration-300"
                     >
-                      {item}
-                    </Link>
+                      {link.name}
+                    </a>
                   </li>
                 ))}
               </ul>
@@ -50,26 +90,10 @@ const Footer = () => {
               <h3 className="text-lg font-semibold mb-4">Sígueme en</h3>
               <div className="flex justify-center md:justify-start space-x-4">
                 {[
-                  {
-                    icon: Facebook,
-                    href: 'https://www.facebook.com/CristianJavierAriasO/',
-                    label: 'Facebook',
-                  },
-                  {
-                    icon: Instagram,
-                    href: 'https://www.instagram.com/javier.9013/',
-                    label: 'Instagram',
-                  },
-                  {
-                    icon: Linkedin,
-                    href: 'https://www.linkedin.com/in/cristianarias-fullstack-frontend-backend/',
-                    label: 'LinkedIn',
-                  },
-                  {
-                    icon: Github,
-                    href: 'https://github.com/Cristian0813',
-                    label: 'GitHub',
-                  },
+                  { icon: Facebook, href: '#', label: 'Facebook' },
+                  { icon: Instagram, href: '#', label: 'Instagram' },
+                  { icon: Linkedin, href: '#', label: 'LinkedIn' },
+                  { icon: Github, href: '#', label: 'GitHub' },
                 ].map((social) => (
                   <a
                     key={social.label}

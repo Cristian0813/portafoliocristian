@@ -12,7 +12,7 @@ export default function DesktopMenu() {
         Inicio
       </Link>
       <Link
-        href="/sobremi"
+        href="/Sobremi"
         className="text-md font-semibold leading-6 hover:text-ColorPurple text-ColorPurpleDark dark:text-slate-300 hover:dark:text-ColorPurple"
       >
         Sobre mí

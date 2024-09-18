@@ -48,7 +48,7 @@ export default function MobileMenu({ isOpen, setIsOpen }: MobileMenuProps) {
                   Inicio
                 </Link>
                 <Link
-                  href="/sobremi"
+                  href="/Sobremi"
                   onClick={closeMenu}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 active:text-ColorPurple active:dark:text-ColorPurpleDark "
                 >

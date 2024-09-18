@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scroll-to {
+    transition: all 0.5s ease-in-out;
+}
+
+.scroll-to:hover {
+    transform: translateY(-10px);
+}
