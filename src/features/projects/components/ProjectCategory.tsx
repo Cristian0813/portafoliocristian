@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Card, CardBody, CardFooter, Image } from '@nextui-org/react';
 import { ProjectType } from '../type';
-import SelectorCard from '@/core/components/SelectorCard';
+import SelectorCard from '@/features/projects/components/SelectorCard';
 import {motion} from 'framer-motion'
 
 interface ProjectCategoryProps {

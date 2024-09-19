@@ -3,15 +3,15 @@ import Image from 'next/image';
 
 export default function Isotipo() {
   return (
-    <div className="flex lg:flex-1">
-      <Link href="/" className="-m-1.5 p-1.5">
+    <div>
+      <Link href="/" className="inline-block mb-4">
         <span className="sr-only">Cristian Arias</span>
         <Image
           alt="Cristian Arias"
-          src="/IsotipoCARO.svg"
-          className="h-44 w-44 hover:brightness-150 dark:invert dark:brightness-0 hover:dark:invert-0 hover:dark:brightness-150"
-          width={100}
-          height={100}
+          src="/IsotipoCA.svg"
+          className="mx-auto md:mx-0 hover:opacity-80 transition-opacity duration-300 dark:invert dark:brightness-0 hover:dark:invert-0 hover:dark:brightness-150"
+          width={150}
+          height={150}
           priority
         />
       </Link>
