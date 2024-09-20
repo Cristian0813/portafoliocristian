@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description:
     'Desarrollador web full-stack con experiencia en JavaScript, HTML, CSS, React, Node.js y Frameworks. Conoce mis proyectos y habilidades.',
   keywords:
-    'Desarrollador web, JavaScript, React, Node.js, HTML, CSS, Soporte técnico, Mesa de ayuda, Cristian Javier Arias Ordoñez, Cristian J Arias O, Cristian Arias, Cristian Ordoñez, Javier Arias Ordoñez, Javier Arias, Javier Ordoñez',
+    'Cristian J Arias O Desarrollador web, JavaScript, React, Node.js, HTML, CSS, Soporte técnico, Mesa de ayuda, Cristian Javier Arias Ordoñez, Cristian J Arias O, Cristian Javier Arias, Cristian Javier Ordoñez, Cristian Arias, Cristian Ordoñez, Javier Arias Ordoñez, Javier Arias, Javier Ordoñez',
   authors: [{ name: 'Cristian Javier Arias Ordoñez' }],
   creator: 'Cristian Javier Arias Ordoñez',
   publisher: 'Cristian Javier Arias Ordoñez',
@@ -47,9 +47,9 @@ export const metadata: Metadata = {
       'Portafolio y proyectos de Cristian Javier Arias Ordoñez, desarrollador web full-stack.',
     images: [
       {
-        url: 'https://cristianjariaso.vercel.app/LogoCA.svg',
-        width: 1200,
-        height: 630,
+        url: 'https://cristianjariaso.vercel.app/IsoCA.svg',
+        width: 780,
+        height: 340,
         alt: 'Cristian Javier Arias Ordoñez',
       },
     ],
