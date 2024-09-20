@@ -9,7 +9,7 @@ export const footerLink: FooterLink = [
   },
   {
     name: 'Proyectos',
-    href: '/#proyectos',
+    href: '/#Proyectos',
   },
   {
     name: 'Contacto',
