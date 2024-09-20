@@ -1,15 +1,24 @@
-import EducationSection from "./components/EducationSection";
-import ExperienceSection from "./components/ExperienceSection";
+import React, { ReactNode } from 'react';
+import EducationSection from './components/EducationSection';
+import ExperienceSection from './components/ExperienceSection';
 
+interface ColoredTextProps {
+  children: ReactNode;
+  color: string;
+}
 
-export default function AboutPage() {
+const ColoredText: React.FC<ColoredTextProps> = ({ children, color }) => (
+  <span className={`${color}`}>{children}</span>
+);
+
+const AboutPage: React.FC = () => {
   return (
     <main className="container mx-auto px-4 py-8 pt-28 relative min-h-screen overflow-hidden my-4 sm:my-8 sm:py-8 md:my-9 md:py-9 lg:mt-9 lg:py-9 xl:my-10 xl:py-10 2xl:my-12 2xl:py-12">
       <h1 className="xl:text-5xl m-[0_auto] text-4xl font-black">
         Soy
-        <br></br>
+        <br />
         <strong className="pl-6">Cristian Javier</strong>
-        <br></br>
+        <br />
         <strong className="pl-12">Arias Ordoñez</strong>
       </h1>
       <div className="mt-8 text-lg leading-relaxed">
@@ -26,11 +35,63 @@ export default function AboutPage() {
         <br />
         <p>
           Con fundamentos en el desarrollo web utilizando diversos lenguajes de
-          programación como HTML, CSS, JavaScript, TypeScript, a través del uso
-          frameworks/librerías como TailwindCSS, Bootstrap, Next.js, Node.js,
-          Express.js y en cuanto a bases de datos, tengo manejo de MongoDB, SQL
-          y PostgreSQL. Además, con conocimiento en la metodología ágil (SCRUM)
-          y la herramienta Git.
+          programación como
+          <ColoredText color="text-[#E34F26] dark:text-[#FFA500]">
+            {' '}
+            HTML,
+          </ColoredText>
+          <ColoredText color="text-[#1572B6] dark:text-[#66D3FA]">
+            {' '}
+            CSS,
+          </ColoredText>
+          <ColoredText color="text-yellow-700 dark:text-[#F0DB4F]">
+            {' '}
+            JavaScript,
+          </ColoredText>
+          <ColoredText color="text-[#3178C6] dark:text-[#007ACC]">
+            {' '}
+            TypeScript,{' '}
+          </ColoredText>
+          a través del uso frameworks/librerías como
+          <ColoredText color="text-[#06B6D4] dark:text-[#38B2AC]">
+            {' '}
+            TailwindCSS,
+          </ColoredText>
+          <ColoredText color="text-[#7952B3] dark:text-[#9B30FF]">
+            {' '}
+            Bootstrap,
+          </ColoredText>
+          <ColoredText color="text-[#000000] dark:text-[#FFFFFF]">
+            {' '}
+            Next.js,
+          </ColoredText>
+          <ColoredText color="text-sky-500 dark:text-sky-400">
+            {' '}
+            React,
+          </ColoredText>
+          <ColoredText color="text-[#339933] dark:text-[#68A063]">
+            {' '}
+            Node.js,
+          </ColoredText>
+          <ColoredText color="text-[#000000] dark:text-[#FFFFFF]">
+            {' '}
+            Express.js,{' '}
+          </ColoredText>
+          y en cuanto a bases de datos, tengo manejo de
+          <ColoredText color="text-[#CC2927] dark:text-[#FF4444]">
+            {' '}
+            SQL,
+          </ColoredText>
+          <ColoredText color="text-[#47A248] dark:text-[#00ED64]">
+            {' '}
+            MongoDB,
+          </ColoredText>
+          <ColoredText color="text-[#336791] dark:text-[#0064A5]">
+            {' '}
+            PostgreSQL.{' '}
+          </ColoredText>
+          Además, con conocimiento en la metodología ágil (SCRUM), APIs y la
+          herramienta Git.
         </p>
         <br />
         <p>
@@ -51,11 +112,13 @@ export default function AboutPage() {
         </a>
       </div>
       <div className="mt-12">
-        <EducationSection/>
+        <EducationSection />
       </div>
       <div className="mt-12">
-        <ExperienceSection/>
+        <ExperienceSection />
       </div>
     </main>
   );
-}
+};
+
+export default AboutPage;
