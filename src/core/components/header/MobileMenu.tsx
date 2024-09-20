@@ -48,14 +48,14 @@ export default function MobileMenu({ isOpen, setIsOpen }: MobileMenuProps) {
                   Inicio
                 </Link>
                 <Link
-                  href="/Sobremi"
+                  href="/sobremi"
                   onClick={closeMenu}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 active:text-ColorPurple active:dark:text-ColorPurpleDark "
                 >
                   Sobre mí
                 </Link>
                 <Link
-                  href="/Contacto"
+                  href="/contacto"
                   onClick={closeMenu}
                   className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 active:text-ColorPurple active:dark:text-ColorPurpleDark "
                 >

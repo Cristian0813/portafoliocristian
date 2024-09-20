@@ -5,7 +5,7 @@ import { Facebook, Github, Instagram, Linkedin } from 'lucide-react';
 export const footerLink: FooterLink = [
   {
     name: 'Sobre mí',
-    href: '/Sobremi',
+    href: '/sobremi',
   },
   {
     name: 'Proyectos',
@@ -13,7 +13,7 @@ export const footerLink: FooterLink = [
   },
   {
     name: 'Contacto',
-    href: '/Contacto',
+    href: '/contacto',
   },
 ];
 

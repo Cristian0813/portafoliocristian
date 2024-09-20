@@ -12,13 +12,13 @@ export default function DesktopMenu() {
         Inicio
       </Link>
       <Link
-        href="/Sobremi"
+        href="/sobremi"
         className="text-md font-semibold leading-6 hover:text-ColorPurple text-ColorPurpleDark dark:text-slate-300 hover:dark:text-ColorPurple"
       >
         Sobre mí
       </Link>
       <Link
-        href="/Contacto"
+        href="/contacto"
         className="text-md font-semibold leading-6 hover:text-ColorPurple text-ColorPurpleDark dark:text-slate-300 hover:dark:text-ColorPurple"
       >
         Contacto
