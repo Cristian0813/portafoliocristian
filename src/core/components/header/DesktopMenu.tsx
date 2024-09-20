@@ -18,7 +18,7 @@ export default function DesktopMenu() {
         Sobre mí
       </Link>
       <Link
-        href="/contacto"
+        href="/Contacto"
         className="text-md font-semibold leading-6 hover:text-ColorPurple text-ColorPurpleDark dark:text-slate-300 hover:dark:text-ColorPurple"
       >
         Contacto

@@ -21,7 +21,7 @@ export default function NotFound() {
             >
               Volver al inicio
             </Link>
-            <Link href="/contacto" className="text-sm font-semibold">
+            <Link href="/Contacto" className="text-sm font-semibold">
               Contactar con asistencia <span aria-hidden="true">&rarr;</span>
             </Link>
           </div>

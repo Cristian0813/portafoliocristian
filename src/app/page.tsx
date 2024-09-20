@@ -8,7 +8,7 @@ export default function App() {
       {/* <section id="home"></section> */}
       <HomePage />
       <SkillsPage />
-      <section id="proyectos">
+      <section id="Proyectos">
       <ProjectPage />
       </section>
     </main>
