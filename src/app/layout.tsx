@@ -85,6 +85,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <head>
+        {/* Google Tag Manager */}
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -94,6 +95,8 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-5CHSCFS7');
           `}
         </Script>
+
+        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-L2KTTS3J4F"
           strategy="afterInteractive"
@@ -110,6 +113,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${permanentMarker.variable} ${sofadiOne.variable} bg-neutral-100 dark:bg-slate-950 text-slate-900 dark:text-slate-300`}
       >
+        {/* Noscript fallback for Google Tag Manager */}
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-5CHSCFS7"
