@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter, Permanent_Marker, Sofadi_One } from 'next/font/google';
 import '@/shared/styles/globals.css';
 import { ThemeProvider } from '@/core/utils/providers';
@@ -6,6 +6,7 @@ import Layout from '@/core/components/Layout';
 import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
+
 const permanentMarker = Permanent_Marker({
   weight: '400',
   subsets: ['latin'],
@@ -18,6 +19,7 @@ const sofadiOne = Sofadi_One({
   variable: '--font-sofadi-one',
 });
 
+/* ✅ METADATA (SIN viewport) */
 export const metadata: Metadata = {
   title: 'Cristian Javier Arias Ordoñez',
   description:
@@ -55,11 +57,6 @@ export const metadata: Metadata = {
     ],
     siteName: 'Portafolio de Cristian Javier Arias Ordoñez',
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 1,
-  },
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
@@ -75,6 +72,13 @@ export const metadata: Metadata = {
   verification: {
     google: 'google479c089f46be40ca',
   },
+};
+
+/* ✅ VIEWPORT SEPARADO (CORRECCIÓN CLAVE) */
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout({
@@ -110,6 +114,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
+
       <body
         className={`${inter.className} ${permanentMarker.variable} ${sofadiOne.variable} bg-neutral-100 dark:bg-slate-950 text-slate-900 dark:text-slate-300`}
       >
@@ -120,8 +125,9 @@ export default function RootLayout({
             height="0"
             width="0"
             style={{ display: 'none', visibility: 'hidden' }}
-          ></iframe>
+          />
         </noscript>
+
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Layout>{children}</Layout>
         </ThemeProvider>
